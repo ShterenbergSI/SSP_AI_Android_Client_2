@@ -4,6 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DataBase.iml" filepath="$PROJECT_DIR$/DataBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appp/appp.iml" filepath="$PROJECT_DIR$/appp/appp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myapplication/myapplication.iml" filepath="$PROJECT_DIR$/myapplication/myapplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myapplication2/myapplication2.iml" filepath="$PROJECT_DIR$/myapplication2/myapplication2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vas/vas.iml" filepath="$PROJECT_DIR$/vas/vas.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ssp_ai.ssp_client.MainActivity">
+
+    <Button
+        android:id="@+id/con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="connect"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="263dp"
+        android:layout_height="95dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+</android.support.constraint.ConstraintLayout>
