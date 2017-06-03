@@ -47,4 +47,37 @@ class Client {
             x.printStackTrace();
         }
     }
+
+    public static class Serv_Catch {
+        public static void main(String[] ar)    {
+            int port = 6666;
+            try {
+                ServerSocket ss = new ServerSocket(port);
+                System.out.println("ждем ответку...");
+
+                Socket socket = ss.accept();
+                System.out.println("переходим к клиенту");
+                System.out.println();
+
+
+                InputStream sin = socket.getInputStream();
+                OutputStream sout = socket.getOutputStream();
+
+
+                DataInputStream in = new DataInputStream(sin);
+                DataOutputStream out = new DataOutputStream(sout);
+
+                String line = null;
+                while(true) {
+                    line = in.readUTF();
+                    System.out.println("тут клиент что-то мне пишет " + line);
+                    System.out.println("я посылаю обратно");
+                    out.writeUTF(line);
+                    out.flush();
+                    System.out.println("ждем далее");
+                    System.out.println();
+                }
+            } catch(Exception x) { x.printStackTrace(); }
+        }
+    }
 }
