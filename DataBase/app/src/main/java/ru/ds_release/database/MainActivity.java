@@ -24,14 +24,14 @@ import java.net.URL;
 
 public class MainActivity  extends AppCompatActivity {
 
-    public static String fio_in = "";
-    public static String dol_in = "";
-    public static String tel_in = "";
+    public static String log_in = "";
+    public static String mail_in = "";
+    public static String pass_in = "";
     public static String server = "ds-release.ru";
 
-    public EditText fio;
-    public EditText dol;
-    public EditText tel;
+    public EditText log;
+    public EditText mail;
+    public EditText pass;
 
 
     @Override
@@ -43,9 +43,9 @@ public class MainActivity  extends AppCompatActivity {
 
         //сначала обратимся к нашим полям и кнопке
         Button btn = (Button) findViewById(R.id.button1);
-        fio = (EditText) findViewById(R.id.editText1);
-        dol = (EditText) findViewById(R.id.editText2);
-        tel = (EditText) findViewById(R.id.editText3);
+        log = (EditText) findViewById(R.id.editText1);
+        mail = (EditText) findViewById(R.id.editText2);
+        pass = (EditText) findViewById(R.id.editText3);
 
 
 
@@ -54,9 +54,9 @@ public class MainActivity  extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                fio_in = fio.getText().toString();
-                dol_in = dol.getText().toString();
-                tel_in = tel.getText().toString();
+                log_in = log.getText().toString();
+                mail_in = mail.getText().toString();
+                pass_in = pass.getText().toString();
 
 
                 try {
@@ -97,7 +97,7 @@ public class MainActivity  extends AppCompatActivity {
 
                 String myURL = "http://"+server+"/server.php";
 
-                String parammetrs = "name="+fio_in+"&dol="+dol_in+"&tel="+tel_in;
+                String parammetrs = "name="+log_in+"&dol="+mail_in+"&tel="+pass_in;
                 byte[] data = null;
                 InputStream is = null;
 
