@@ -54,16 +54,15 @@
     </EditText>
 
 
-
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Сохранить"
-        android:layout_marginBottom="213dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="213dp"
+        android:text="login" />
 
     <EditText
         android:id="@+id/editText1"
